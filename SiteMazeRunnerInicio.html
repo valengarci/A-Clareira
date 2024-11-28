@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Clareira - Maze Runner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    header {
+      background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*LseGsmyl014p8gsCyhESNA.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 60px 0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header .escrito {
+      z-index: 10;
+    }
+
+    header h1, header p {
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      margin: 0;
+    }
+
+    header p {
+      margin-top: 10px;
+    }
+
+    header .navbar {
+      z-index: 10;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    body {
+      background-color: #2a3d2f;
+      color: #d1e7d1;
+    }
+
+    h1, h2, h3, p {
+      color: #c8e6c9;
+    }
+
+    .navbar-nav .nav-item:last-child {
+      margin-left: 30px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .destaque {
+      font-weight: bold;
+      color: #83a389;
+    }
+
+    .paragrafo-destaque {
+      font-style: italic;
+      background-color: #4b8857;
+      padding: 10px;
+      border-left: 5px solid #022809;
+      margin-bottom: 20px;
+    }
+
+    .subtitulo {
+      font-size: 1.25rem;
+      color: #83a389;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #4b8857;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #d1f9cd;
+    }
+
+    main.container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .img-capa {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 15px;
+      border: 3px solid #004d33;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      float: right;
+    }
+
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .destaque {
+        font-size: 1rem;
+      }
+
+      .subtitulo {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 2.25rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .main-content {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="escrito">
+      <h1>A Clareira</h1>
+      <p>Bem-vindo ao Guia Completo de Maze Runner</p>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/giovana.flores/Downloads/SiteMazeRunnerInicio.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/giovana.flores/Downloads/SiteMazeRunnerLivros.html">Livros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/giovana.flores/Downloads/SiteMazeRunnerFilmes.html">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/giovana.flores/Downloads/SiteMazeRunnerAutor.html">Autor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/giovana.flores/Downloads/SiteMazeRunnerLogin.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container mt-4">
+    <h1>Sobre o livro</h1>
+    <p>Este site é uma verdadeira homenagem aos fãs de Maze Runner, a famosa série criada por James Dashner. A história é ambientada em um mundo distópico, onde o protagonista, Thomas, se vê preso em um misterioso labirinto sem lembranças de seu passado. Acompanhe sua jornada ao lado de outros "clareanos", enquanto eles tentam desvendar os segredos por trás do labirinto e de uma sociedade que parece esconder mais do que revela.</p>
+    <p>Nosso objetivo é proporcionar a você, fã da série, uma plataforma para explorar em detalhes o universo de *Maze Runner*. Aqui, você encontrará tudo o que precisa saber sobre os livros e filmes, incluindo análises aprofundadas, teorias de fãs, descrições detalhadas dos personagens e locais, curiosidades sobre o autor James Dashner, entre outros. Além disso, oferecemos um espaço para você interagir com outros fãs, deixando seus comentários, discutindo teorias e trocando ideias sobre os acontecimentos da trama. Não importa se você é um fã novo ou de longa data, temos algo para todos!</p>
+    <p>Explore todas as páginas e descubra como Maze Runner se tornou um dos maiores sucessos literários e cinematográficos da última década! Prepare-se para um mundo repleto de enigmas e reviravoltas, onde nada é o que parece ser e a verdade é muito mais complexa do que se imagina.</p>
+    
+    <h1>Nosso objetivo</h1>
+    <p>O objetivo principal deste site é proporcionar uma experiência imersiva e rica para todos os admiradores do universo de *Maze Runner*. Através de informações detalhadas sobre os livros, os filmes e os personagens, buscamos oferecer um conteúdo envolvente para aqueles que desejam entender melhor o mundo criado por James Dashner. Através de nosso conteúdo, você será capaz de se aprofundar nos mistérios do Labirinto e conhecer as histórias de coragem, amizade e sacrifício dos protagonistas.</p>
+    <p>Queremos também criar uma comunidade ativa de fãs, onde você pode discutir teorias, compartilhar sua paixão e aprender mais sobre os mistérios do Labirinto e da história que se desenrola ao seu redor. De maneira colaborativa, buscamos construir um espaço para a troca de ideias, sugestões e novas perspectivas sobre a série. Este é um local onde todas as opiniões são bem-vindas e podem ajudar a formar uma visão mais rica do enredo e do desenvolvimento dos personagens.</p>
+    <p>Com mais de uma década de legado, a saga de *Maze Runner* continua a impactar uma geração de leitores e cinéfilos. Estamos aqui para ajudar você a mergulhar ainda mais nesse mundo fascinante e misterioso, além de manter você atualizado com as últimas notícias e eventos relacionados ao universo da série. Junte-se a nós nessa jornada e compartilhe a emoção de explorar os segredos da Clareira! Vamos juntos, como fãs, encontrar as respostas que o Labirinto ainda guarda para nós!</p>
+    
+  </main>
+  
+ 

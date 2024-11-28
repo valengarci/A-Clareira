@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Dashner - Maze Runner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    header {
+      background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*LseGsmyl014p8gsCyhESNA.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 60px 0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;
+      text-align: center;
+    }
+
+    header .escrito {
+      z-index: 10;
+    }
+
+    header h1, header p {
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      margin: 0;
+    }
+
+    header p {
+      margin-top: 10px;
+    }
+
+    header .navbar {
+      z-index: 10;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+    body {
+      background-color: #2a3d2f;
+      color: #d1e7d1;
+    }
+
+    h1, h2, h3, p {
+      color: #c8e6c9;
+    }
+
+    .navbar-nav .nav-item:last-child {
+      margin-left: 30px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .destaque {
+      font-weight: bold;
+      color: #83a389;
+    }
+
+    .paragrafo-destaque {
+      font-style: italic;
+      background-color: #4b8857;
+      padding: 10px;
+      border-left: 5px solid #022809;
+      margin-bottom: 20px;
+    }
+
+    .subtitulo {
+      font-size: 1.25rem;
+      color: #83a389;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #4b8857;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #d1f9cd;
+    }
+
+    main.container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .img-capa {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 15px;
+      border: 3px solid #004d33;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      float: right;
+    }
+
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .destaque {
+        font-size: 1rem;
+      }
+
+      .subtitulo {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 2.25rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .main-content {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="escrito">
+      <h1>A Clareira</h1>
+      <p>Bem-vindo ao Guia Completo de James Dashner</p>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/giovana.flores/Downloads/SiteMazeRunnerInicio.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/giovana.flores/Downloads/SiteMazeRunnerLivros.html">Livros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/giovana.flores/Downloads/SiteMazeRunnerFilmes.html">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/giovana.flores/Downloads/SiteMazeRunnerAutor.html">Autor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/giovana.flores/Downloads/SiteMazeRunnerLogin.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mt-4 main-content">
+    <h1>James Dashner: Autor e Criador do Mundo de Maze Runner</h1>
+    <p>James Dashner é um autor norte-americano famoso por suas obras de ficção científica e distopia. Nascido em 26 de novembro de 1972, em Geórgia, Estados Unidos, Dashner conquistou uma enorme base de fãs ao redor do mundo com suas histórias repletas de mistérios e cenários distópicos. Seu maior sucesso veio com a série Maze Runner, que explora um mundo pós-apocalíptico, cheio de enigmas, desafios e dilemas morais.</p>
+    <p>James Dashner cresceu na cidade de Georgia e, desde muito jovem, se interessou por leitura e escrita. Ele era fascinado por ficção científica, mistério e fantasia, influências que mais tarde seriam evidentes em suas obras.</p>
+    <p>Sua paixão pela literatura começou com livros de aventura e mistério, além de um forte gosto por histórias com personagens adolescentes enfrentando grandes desafios. Dashner foi inspirado por escritores como J.R.R. Tolkien, C.S. Lewis e George Orwell, cujas obras alimentaram seu desejo de criar mundos complexos e cheios de suspense.</p>
+    <p>A obra que definiu a carreira de James Dashner foi, sem dúvida, a série Maze Runner. O primeiro livro, Correr ou Morrer (The Maze Runner), foi publicado em 2009 e rapidamente se tornou um best-seller. A trama segue Thomas, um adolescente que acorda em um lugar misterioso, chamado "A Clareira", sem memória de sua vida passada. Ele e outros jovens precisam desvendar os mistérios do Labirinto, um lugar perigoso e mortal que se transforma em um campo de batalha para a sobrevivência.</p>
+    <p>A série tem elementos clássicos de ficção científica e distopia, como uma sociedade secreta, uma organização misteriosa (WICKED), e uma luta pela sobrevivência em um mundo desconhecido. Mas o que torna Maze Runner ainda mais envolvente são os dilemas morais e a dinâmica entre os personagens, que buscam liberdade e respostas para o que aconteceu ao mundo.</p>
+    <p>Com o enorme sucesso do primeiro livro, Maze Runner foi seguida por duas sequências: Prova de Fogo (The Scorch Trials) e A Cura Mortal (The Death Cure), finalizando a trilogia principal. Além disso, ele escreveu prequels e outros livros ambientados no mesmo universo, como A Ordem dos Exterminadores (The Kill Order) e A Nova Ordem (The Fever Code).</p>
+
+    <h1>Sucesso Cinematográfico</h1>
+    <p>Em 2014, a adaptação cinematográfica de Maze Runner foi lançada nos cinemas, seguida de outras duas sequências baseadas nos livros. As adaptações para o cinema ajudaram a expandir ainda mais a base de fãs da franquia, com Dylan O'Brien interpretando o protagonista Thomas.</p>
+    <p>As adaptações para o cinema capturaram a essência dos livros, apresentando ação, suspense e uma trama cheia de reviravoltas. Embora os filmes tenham algumas diferenças em relação aos livros, eles ainda mantêm a essência do enredo e ajudaram a solidificar o legado de Dashner no mundo do entretenimento juvenil.</p>
+
+    <h1>Outras obras</h1>
+    <p>Antes de alcançar o sucesso com Maze Runner, Dashner já havia explorado outros gêneros e escrito várias obras voltadas para o público jovem. Uma delas foi 13ª Realidade (The 13th Reality), uma série que mistura ficção científica, mistério e aventura, com um protagonista chamado Atticus Higginbottom, que é transportado para realidades paralelas.</p>
+    <p> Dashner também escreveu livros como O Tesouro do Templo (The Maze Runner Diaries) e A Última Escapatoria (The Last Escape), sempre mantendo seu estilo voltado para o público jovem-adulto, com tramas que desafiam a lógica e apresentam reviravoltas intrigantes.</p>
+    <p>James Dashner é conhecido por seu estilo de escrita empolgante e direto ao ponto. Seus livros são marcados por uma narrativa cheia de ação, mistério e suspense, com personagens fortes que enfrentam decisões difíceis. Ele tem uma habilidade única de construir tensão e manter os leitores interessados, com capítulos curtos e cliffhangers (deixar o leitor em suspense) ao final de cada parte.</p>
+    <p>Ele também tem uma forma de criar mundos distópicos que são, ao mesmo tempo, críveis e aterrorizantes. Embora seus enredos se passem em futuros distópicos ou em mundos distantes, as questões e os dilemas abordados são muitas vezes universais, como a luta pela liberdade, a identidade e o poder de escolha.</p>
+    <p>James Dashner não apenas criou um dos maiores sucessos literários do gênero distópico, mas também contribuiu significativamente para a forma como os leitores se conectam com histórias de aventura e mistério. Ao criar mundos complexos e personagens marcantes, Dashner continua a ser uma referência para os fãs de ficção científica e literatura jovem-adulta.</p>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 A Clareira - Maze Runner Fansite. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
